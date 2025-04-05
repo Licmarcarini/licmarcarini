@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lic. Marcarini</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfcfb;
+      color: #5c4438;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #e8e1d4;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav {
+      background: #d7ccc8;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #5c4438;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: block;
+    }
+    nav a:hover {
+      background: #c4b7ab;
+    }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #5c4438;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #7a5c4b;
+    }
+    footer {
+      text-align: center;
+      background: #e8e1d4;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lic. Marcarini</h1>
+    <p>Atención psicológica para adolescentes, jóvenes y adultos desde el enfoque psicoanalítico</p>
+  </header>
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#enfoque">Mi enfoque</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Gracias por contactarte. Dar el primer paso es importante y estoy aquí para acompañarte. Soy psicóloga (UBA) con formación en psicología clínica desde un enfoque psicoanalítico. Realizo atención virtual para adolescentes, jóvenes y adultos de manera particular y con aranceles accesibles.</p>
+  </section>
+  <section id="enfoque">
+    <h2>Mi enfoque</h2>
+    <p>Trabajo desde una perspectiva psicoanalítica, enfocándome en la escucha atenta y la singularidad de cada sujeto. Acompaño los procesos de elaboración subjetiva, considerando la historia personal de cada paciente.</p>
+  </section>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Para solicitar un turno de admisión o realizar una consulta inicial, completá el siguiente formulario. Te responderé a la brevedad.</p>
+    <form action="https://formsubmit.co/lic.marcariniceleste@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu correo electrónico" required />
+      <textarea name="message" rows="4" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 Lic. Marcarini. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
